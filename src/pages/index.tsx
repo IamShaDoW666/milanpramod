@@ -1,5 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
+import Head from "next/head";
+import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
@@ -9,12 +11,12 @@ const Home: NextPage = () => {
         <meta name="description" content="Milan Pramod - Fullstack Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navbar />
       <main>
-        
-      </main>          
+        <Header />
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
