@@ -3,13 +3,15 @@ import Image from "next/image";
 import FacebookIcon from "./icons/Facebook";
 import InstagramIcon from "./icons/Instagram";
 import GithubIcon from "./icons/Github";
+import Profile from '/public/profile.jpeg';
 
 const Header: React.FC = () => {
   return (
     <div className="sm:flex font-mono">
       <div className="bg-secondary sm:w-2/5 py-12 flex flex-col items-center justify-center">
         <div className="rounded-full w-32 h-32 overflow-hidden shadow">
-          <img src="/profile.jpeg" className="object-fill" alt="Profile" />
+          {/* <img src="/profile.jpeg" className="object-fill" alt="Profile" /> */}
+          {/* <Image height="168" width="128" placeholder="blur" src={Profile} alt="Profile" /> */}
         </div>
         <div className="mt-4">
           <h1 className="font-semibold text-xl">Milan Pramod</h1>
